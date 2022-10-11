@@ -1,5 +1,5 @@
 {% set name = "presto-python-client" %}
-{% set version = "0.8.2" %}
+{% set version = "0.8.3" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/presto-python-client-{{ version }}.tar.gz
-  sha256: 15b0c7d23e8838369ad3db493dcd3b5bd6578883a1385b50712720353bba98c1
+  sha256: 260249efefbcf56f407f93d39d92fb9963164ca3d7abffa4493fd127346d2732
 
 build:
   number: 0
