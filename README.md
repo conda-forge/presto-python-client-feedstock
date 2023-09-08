@@ -1,11 +1,11 @@
-About presto-python-client
-==========================
+About presto-python-client-feedstock
+====================================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/presto-python-client-feedstock/blob/main/LICENSE.txt)
 
 Home: https://github.com/prestodb/presto-python-client
 
 Package license: Apache-2.0
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/presto-python-client-feedstock/blob/main/LICENSE.txt)
 
 Summary: Client for the Presto distributed SQL Engine
 
