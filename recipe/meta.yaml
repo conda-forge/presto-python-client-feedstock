@@ -6,21 +6,21 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/presto-python-client-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/presto-python-client-{{ version }}.tar.gz
   sha256: b5d9d7278c10af932c6b5ce3a417dfa883b539e947ece1f7f43ba4632c2994c5
 
 build:
-  number: 0
+  number: 1
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
   host:
     - pip
-    - python >=3.5
+    - python {{ python_min }}
   run:
     - click
-    - python >=3.5
+    - python >={{ python_min }}
     - requests
     - six
 
@@ -31,6 +31,7 @@ test:
     - pip check
   requires:
     - pip
+    - python {{ python_min }}
 
 about:
   home: https://github.com/prestodb/presto-python-client
